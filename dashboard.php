@@ -58,7 +58,13 @@
            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
            </svg>
                 Projects
-              </a> 
+              </a>
+              <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md" x-state-description="undefined: &quot;bg-gray-900 text-white&quot;, undefined: &quot;text-gray-300 hover:bg-gray-700 hover:text-white&quot;">
+                <svg class="text-gray-400 group-hover:text-gray-300 mr-3 flex-shrink-0 h-6 w-6" x-state-description="undefined: &quot;text-gray-300&quot;, undefined: &quot;text-gray-400 group-hover:text-gray-300&quot;" x-description="Heroicon name: outline/folder" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"></path>
+           </svg>
+                Sing out
+              </a>  
           </nav>
         </div>
        
@@ -75,60 +81,29 @@
       </div>
       <main class="flex-1">
         <div class="py-6">
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-2xl font-semibold text-gray-900">Dashboard</h1>
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 my-4">
+            <h1 class="text-2xl font-semibold text-gray-900">Welcome back</h1>
           </div>
-          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex  flex-wrap justify-center gap-20">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 flex  flex-wrap  justify-center gap-6">
             <!-- Replace with your content -->
-            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
-              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
                 <img
-                  src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80"
-                  class="object-cover w-full h-full"
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full "
                 />
               </div>
               <div class="p-6">
                 <div class="flex items-center justify-between mb-2">
                   <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                    Apple AirPods
+                    Abdellah Talemsi
                   </p>
                   <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                    $95.00
+                    Product Owner
                   </p>
                 </div>
                 <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
-                  With plenty of talk and listen time, voice-activated Siri access, and an
-                  available wireless charging case.
-                </p>
-              </div>
-              <div class="p-6 pt-0">
-                <button
-                  class="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
-                  type="button"
-                >
-                  Add to Cart
-                </button>
-              </div>
-            </div>
-            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-96 rounded-xl bg-clip-border">
-              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-96 rounded-xl bg-clip-border">
-                <img
-                  src="https://images.unsplash.com/photo-1629367494173-c78a56567877?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=927&amp;q=80"
-                  class="object-cover w-full h-full"
-                />
-              </div>
-              <div class="p-6">
-                <div class="flex items-center justify-between mb-2">
-                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                    Apple AirPods
-                  </p>
-                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
-                    $95.00
-                  </p>
-                </div>
-                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
-                  With plenty of talk and listen time, voice-activated Siri access, and an
-                  available wireless charging case.
+                  Equipe: NightClawres
                 </p>
               </div>
               <div class="p-6 pt-0">
@@ -137,7 +112,278 @@
                   type="button">Supprime</button>
               </div>
               <div class="p-6 pt-0">
-                <button class="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> Modifier</button>
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
+              </div>
+            </div>
+            <div class="relative flex flex-col text-gray-700 bg-white shadow-md w-80 rounded-xl bg-clip-border">
+              <div class="relative mx-4 mt-4 overflow-hidden text-gray-700 bg-white h-80 rounded-xl bg-clip-border">
+                <img
+                  src="img/moi.jpg"
+                  class="object-cover w-full h-full"
+                />
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-2">
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Abdellah Talemsi
+                  </p>
+                  <p class="block font-sans text-base antialiased font-medium leading-relaxed text-blue-gray-900">
+                    Product Owner
+                  </p>
+                </div>
+                <p class="block font-sans text-sm antialiased font-normal leading-normal text-gray-700 opacity-75">
+                  Equipe: NightClawres
+                </p>
+              </div>
+              <div class="p-6 pt-0">
+                <button
+                  class="block w-full select-none rounded-lg bg-rose-500  py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                  type="button">Supprime</button>
+              </div>
+              <div class="p-6 pt-0">
+                <button class="block w-full select-none rounded-lg bg-blue-700 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-white transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button"> 
+                  Modifier</button>
               </div>
             </div>
             <!-- /End replace -->
