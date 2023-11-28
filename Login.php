@@ -14,10 +14,62 @@
     </style>
     <title>Login Page</title>
 </head>
+<?php
+
+include 'config.php';
+session_start(); 
+
+
+$admin_email = "admin@example.com";
+$admin_password = "adminpassword";
+function authenticateUser($email, $password) {
+    global $pdo;
+
+    $stmt = $pdo->prepare("SELECT * FROM users WHERE Email = ?");
+    $stmt->execute([$email]);
+    $user = $stmt->fetch();
+
+    if ($user && password_verify($password, $user['PasswordU'])) {
+        return $user; 
+    } else {
+        return null; 
+    }
+}
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $emailA = $_POST["email"];
+    $passwordA = $_POST["password"];
+    $authenticatedUser = authenticateUser($emailA, $passwordA);
+    if ($emailA == $admin_email && $passwordA == $admin_password) {
+        $_SESSION['user_email'] = $admin_email;
+        $_SESSION['user_role'] = 'admin';
+        $_SESSION['nom_admin'] = 'Abdellah Talemsi';
+        header("Location: admin/dashboardA.php");
+        exit();
+    } elseif ($authenticatedUser) {
+        
+        if ($authenticatedUser['UserRole'] == 'user') {
+            header("Location: dashboard.php");
+        } elseif ($authenticatedUser['UserRole'] == 'product_owner') {
+            header("Location: productowner/dashboardP.php");
+        }elseif(($authenticatedUser['UserRole'] == 'scrum_master')) {
+            header("Location: scrummaster/dashboardS.php");
+        }
+        $_SESSION["user"] = $authenticatedUser;
+        $_SESSION["role"] = $authenticatedUser['UserRole'];
+        $_SESSION["nom"] = $authenticatedUser['Nom'] . " " . $authenticatedUser['Prenom'];
+        exit();
+    } else {
+        // $authenticatedUser = authenticateUser($emailA, $passwordA);
+        echo "<p class='mt-4 text-sm text-gray-600'>Login failed. Invalid email or password.</p>";
+    }
+    
+    
+}
+?>
 <body class="bg-gray-100 flex items-center justify-center h-screen">
     <div class="bg-white p-8 rounded shadow-md w-96">
         <!-- Login Form -->
-        <form id="login-form">
+        <form id="login-form" action="login.php" method="post">
             <img src="img/black.png" alt="Logo" class="mx-auto mb-8 rounded-full w-32 h-20">
             <div class="mb-4">
                 <label for="email" class="block text-gray-600 text-sm font-semibold mb-2">Email</label>
@@ -30,51 +82,8 @@
             <button type="submit" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none focus:border-blue-700 focus:ring focus:ring-blue-200">
                 Login
             </button>
-            <p class="mt-4 text-sm text-gray-600">Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+            <p class="mt-4 text-sm text-gray-600">Don't have an account? <a href="signup.php" id="show-signup" class="text-blue-700 font-bold">Sign up</a></p>
         </form>
-
-        <!-- Signup Form -->
-        <form id="signup-form" class=" hidden">
-        <img src="img/black.png" alt="Logo" class="mx-auto mb-8 rounded-full w-32 h-20">
-            <div class="mb-4">
-                <label for="signup-nom" class="block text-gray-600 text-sm font-semibold mb-2">Nom</label>
-                <input type="nom" id="signup-nom" name="signup-nom" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Nom" required>
-            </div>
-           
-            <div class="mb-4">
-                <label for="signup-prenom" class="block text-gray-600 text-sm font-semibold mb-2">Prenom</label>
-                <input type="prenom" id="signup-prenom" name="signup-prenom" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Prenom" required>
-            </div>
-            <div class="mb-4">
-                <label for="signup-email" class="block text-gray-600 text-sm font-semibold mb-2">Email</label>
-                <input type="email" id="signup-email" name="signup-email" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="john.doe@gmail.com" required>
-            </div>
-            <div class="mb-4">
-                <label for="signup-tel" class="block text-gray-600 text-sm font-semibold mb-2">Telephone</label>
-                <input type="tel" id="signup-tel" name="signup-tel" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="Telephone" required>
-            </div>
-            <div class="mb-4">
-                <label for="signup-password" class="block text-gray-600 text-sm font-semibold mb-2">Password</label>
-                <input type="password" id="signup-password" name="signup-password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500" placeholder="********" required>
-            </div>
-            <button type="submit" class="w-full bg-green-500 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:border-green-700 focus:ring focus:ring-green-200">
-                Sign Up
-            </button>
-            <p class="mt-4 text-sm text-gray-600">Already have an account? <a href="#" id="show-login">Login</a></p>
-        </form>
-
-        <script>
-            // JavaScript to toggle form visibility
-            document.getElementById('show-signup').addEventListener('click', function () {
-                document.getElementById('login-form').classList.add('hidden');
-                document.getElementById('signup-form').classList.remove('hidden');
-            });
-
-            document.getElementById('show-login').addEventListener('click', function () {
-                document.getElementById('signup-form').classList.add('hidden');
-                document.getElementById('login-form').classList.remove('hidden');
-            });
-        </script>
     </div>
 </body>
 </html>
